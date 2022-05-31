@@ -72,5 +72,17 @@ class Home extends CI_Controller
 		//Insert data
 		$this->M_Home->InsertDate($DataInsert);
 	}
+
+
+
+	// data realtime
+	public function realtimedata() {
+
+		$this->load->model('M_home');
+
+		// load model 
+		$data = $this->M_Home->getDataSensor();
+		echo json_encode( $data );
+	}
 }
 

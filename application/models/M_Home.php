@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  	public function getDataSensor()
  	{
 
- 		$sql = "SELECT * FROM `tb_tampilan`ORDER BY tanggal DESC LIMIT 1";
+ 		$sql = "SELECT * FROM `tb_tampilan`ORDER BY id_tampilan DESC LIMIT 1";
  		return $this->db->query( $sql )->row();
  	}
 

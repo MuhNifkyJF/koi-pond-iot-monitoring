@@ -17,6 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
        // $query = $this->db->get();
        // return $query;
 
+    $this->db->order_by('id_tampilan', 'DESC');
   	return $this->db->get('tb_tampilan')->result();
   	
     
