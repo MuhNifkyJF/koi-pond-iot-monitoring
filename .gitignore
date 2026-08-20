@@ -1,4 +1,20 @@
 .DS_Store
+.env
+.env.*
+!.env.example
+
+/node_modules/
+/vendor/
+
+*.sql
+!database/sample_schema.sql
+*.xlsx
+*.xls
+*.csv
+*.log
+*.zip
+*.rar
+*.bak
 
 application/cache/*
 !application/cache/index.html
@@ -15,8 +31,6 @@ user_guide_src/build/*
 user_guide_src/cilexer/build/*
 user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
-/vendor/
-
 # IDE Files
 #-------------------------
 /nbproject/

@@ -15,15 +15,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  	public function getDataSensor()
  	{
 
- 		$sql = "SELECT * FROM `tb_tampilan`ORDER BY id_tampilan DESC LIMIT 1";
- 		return $this->db->query( $sql )->row();
+		return $this->db
+			->order_by('id_tampilan', 'DESC')
+			->limit(1)
+			->get('tb_tampilan')
+			->row();
  	}
 
  	public function InsertDate($DataInsert)
  	{
 
- 		$this->db->insert('tb_tampilan', $DataInsert);
- 		
+		return $this->db->insert('tb_tampilan', $DataInsert);
  	}
  }
 

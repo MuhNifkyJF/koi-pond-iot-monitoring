@@ -11,11 +11,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   public function GET_ALL()
   {
 
-       // $this->db->select('*');
-       // $this->db->from('tb_tampilan');
-       // $this->db->order_by('id_tampilan','desc');
-       // $query = $this->db->get();
-       // return $query;
 
     $this->db->order_by('id_tampilan', 'DESC');
   	return $this->db->get('tb_tampilan')->result();

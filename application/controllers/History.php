@@ -12,6 +12,10 @@ class History extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('m_history','tampil');
+		if (!$this->session->userdata('username') || (int) $this->session->userdata('user_level') !== 1) {
+			redirect('login');
+			exit;
+		}
 	}
 
 

@@ -1,4 +1,13 @@
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php/$1 [L]
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(?:application|system|vendor|node_modules)(?:/|$) - [F,L,NC]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
+
+Options -Indexes
+
+<FilesMatch "(?i)\.(?:env|ini|log|sql|xlsx?|csv|zip|rar|bak)$">
+    Require all denied
+</FilesMatch>

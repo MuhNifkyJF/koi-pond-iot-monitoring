@@ -15,7 +15,7 @@
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-primary">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">SELAMAT DATANG</a>
+            <a class="navbar-brand ps-3" href="<?= base_url('home'); ?>">KOI POND MONITORING</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
@@ -41,13 +41,13 @@
                     <div class="sb-sidenav-menu ps-4">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Menu</div>
-                            <a class="nav-link" href="home">
+                            <a class="nav-link" href="<?= base_url('home'); ?>">
                                 Halaman Utama
                             </a>
-                            <a class="nav-link" href="monitoring">
+                           <!--  <a class="nav-link" href="monitoring">
                                 Monitoring
-                            </a>
-                            <a class="nav-link" href="history">
+                            </a> -->
+                            <a class="nav-link" href="<?= base_url('history'); ?>">
                                 History
                             </a>
                         </div>

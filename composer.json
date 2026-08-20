@@ -1,6 +1,6 @@
 {
-	"description": "The CodeIgniter framework",
-	"name": "codeigniter/framework",
+	"description": "Web dashboard for koi pond sensor monitoring.",
+	"name": "portfolio/koi-pond-iot-monitoring",
 	"type": "project",
 	"homepage": "https://codeigniter.com",
 	"license": "MIT",

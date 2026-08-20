@@ -15,21 +15,29 @@
                                  <th>Tanggal</th>
                                  <th>Suhu Air</th>
                                  <th>PH Air</th>
+                                 <th>Suhu lingkungan</th>
                                </tr>
                       </thead> 
                       <tbody>
                        
-               <?php foreach($tampil as $key) :  $no = 1; ?> 
+               <?php
+
+$nomor = 1;
+               foreach($tampil as $key) : ?>
                
                     <tr>
                      
-                       <td><?= $no++ ?></td>
-                       <td><?= $key->tanggal ?> </td>
-                       <td><?= $key->suhu ?> </td>
-                       <td><?= $key->kadar_ph ?> </td>
+                       <td><?= $nomor ?> </td>
+                       <td><?= html_escape($key->tanggal) ?> </td>
+                       <td><?= html_escape($key->suhu) ?> </td>
+                       <td><?= html_escape($key->kadar_ph) ?> </td>
+                       <td><?= html_escape($key->sensor_dht) ?> </td>
                     </tr>
 
-              <?php endforeach ?>
+              <?php
+
+$nomor++;
+            endforeach ?>
       
                           </tbody>
                   </table>
