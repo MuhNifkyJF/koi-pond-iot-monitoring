@@ -53,27 +53,23 @@ Simpan screenshot aplikasi di folder `assets/screenshots/` dengan nama file beri
 
 ### Login
 
-![Login page](assets/screenshots/login.png)
+![Login page](assets/screenshots/login.PNG)
 
 ### Dashboard Monitoring
 
-![Dashboard monitoring](assets/screenshots/dashboard.png)
+![Dashboard monitoring](assets/screenshots/dashboard.PNG)
 
 ### Grafik Sensor
 
-![Sensor chart](assets/screenshots/sensor-chart.png)
+![Sensor chart](assets/screenshots/sensor-chart.PNG)
 
 ### History Data
 
-![History data](assets/screenshots/history.png)
-
-### Input Sensor
-
-![Sensor endpoint response](assets/screenshots/sensor-endpoint.png)
+![History data](assets/screenshots/history.PNG)
 
 ### Sample Database
 
-![Sample database](assets/screenshots/database-sample.png)
+![Sample database](assets/screenshots/database-sample.PNG)
 
 ## Instalasi
 
